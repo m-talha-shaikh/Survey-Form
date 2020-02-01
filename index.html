@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <meta name="author" content="Muhammad Talha Shaikh">
+        <link rel="stylesheet" href="./stylesheets/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="wrapper">
+            <h1 id="title">Clean and Green Earth</h1>
+            <section class="container">
+                <p id="description">Join our Hands in making the Earth clean and green</p>
+                <form id="survey-form">
+                    <section class="inputs">
+                        <label for="name" id="name-label">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </section>
+                    <section class="inputs">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email address" required>
+                    </section>
+                    <section class="inputs">
+                        <label for="number" id="number-label">Age</label>
+                        <input type="number" id="number" min="10" max="99" placeholder="Your Age" required>
+                    </section>
+                    <section class="inputs">
+                        <label for="dropdown">Which option best describes you ?</label>
+                        <select name="occupation" id="dropdown">
+                            <option value="student">Student</option>
+                            <option value="employed">Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="businessman">Businessman</option>
+                        </select>
+                    </section>
+                    <section class="inputs">
+                        <label for="concerned">How much are you worried about Climate Change ?</label>
+                        <ul id="concerned" class="worriness">
+                            <li>
+                                <input type="radio" name="worried" value="deeply-concerned" id="deeply-concerned" checked>
+                                <label for="deeply-concerned">Deeply concerned</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="worried" value="concerned" id="concerned">
+                                <label for="concerned">Concerned</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="worried" value="not-concerned" id="not-concerned">
+                                <label for="not-concerned">Not Concerned at all</label>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="inputs">
+                        <label for="activities">What activities are you willing to participate ?</label>
+                        <ul id="activities" class="worriness">
+                            <li> 
+                                <input type="checkbox" value="coast" id="coast">
+                                <label for="coast">Cleaning Beach</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value="planting" id="planting">
+                                <label for="planting"> Planting Trees</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value="trash" id="trash">
+                                <label for="trash">Cleaning Garbage</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value="awareness" id="awareness">
+                                <label for="awareness">Giving seminar for social awareness</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" value="research" id="research">
+                                <label for="research">Conducting Research</label>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="inputs">
+                        <label for="views">What are your views about Climate Change ?</label>
+                        <textarea name="views" id="views" id="" cols="7" rows="6"></textarea>
+                    </section>
+                    <div>
+                        <button id="submit" value="submit">Submit</button>
+                    </div>
+
+                </form>
+            </section>
+        </section>
+    </body>
+</html>
